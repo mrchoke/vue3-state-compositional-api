@@ -1,9 +1,9 @@
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import Notifier from '@jsanahuja/notifierjs'
 
 class SystemNoti {
-  type = ref('info')
-  msg = ref('Welcome')
+  type = 'info'
+  msg = 'Welcome'
 
   notifier = new Notifier({
     position: 'top-right',
